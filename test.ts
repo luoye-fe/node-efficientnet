@@ -19,9 +19,9 @@ const images = [
   "fish.pdf",
   "fish.heic",
   // "fish.bmp",
-  // "car.heic",
-  // "panda.heic",
-  // "gun.heic",
+  "car.heic",
+  "panda.heic",
+  "gun.heic",
 ];
 const imageDir = "./tests/examples/";
 
