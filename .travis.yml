@@ -5,9 +5,10 @@ os:
   - windows
 node_js:
   - "14"
-before_script:
+before_install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get -y install libvips; fi
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install libvips; fi
+before_script:
   - npm install
   - npm run build
 after_success:
