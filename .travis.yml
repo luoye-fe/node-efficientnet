@@ -6,8 +6,8 @@ os:
 node_js:
   - "14"
 before_script:
-  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get -y install libvips
-  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install libvips
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get -y install libvips; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install libvips; fi
   - npm install
   - npm run build
 after_success:
