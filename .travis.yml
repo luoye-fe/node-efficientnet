@@ -1,14 +1,13 @@
 language: node_js
 os:
-  - linux
+  # - linux
   - osx
-  - windows
+  # - windows
 node_js:
   - "14"
 before_install:
-  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get -y install libvips; fi
-  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install libvips; fi
-  - npm install sharp --save -d
+  # - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt -y install libvips-dev; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install vips; fi
 install:
   - npm install
 before_script:
